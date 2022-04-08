@@ -79,7 +79,7 @@ body {
   -moz-background-size: cover;
   background-size: 83%;
   -o-background-size: cover;
-  opacity: .96;
+  opacity: 1;
   border-radius: 300px;
   border-image: 10cm
 }
@@ -159,7 +159,7 @@ body {
 .trinket
 {
   color:black;
-  opacity: 0.7;
+  opacity: 0.9;
   border-radius: 100cm;
   background-color: black;
 }
