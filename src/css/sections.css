@@ -102,7 +102,8 @@ flex: 25;
 }
 .expanding-container2 { 
 display: flex; 
-width: 100%; 
+width: 100%;
+
 } 
 /* Background properties and  
     transition effect to section */ 
