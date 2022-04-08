@@ -9,7 +9,7 @@ html
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: white;
 }
   /*--- Fixed Video Background iOS/Mobile Style--*/
   .video-wrap {
@@ -162,7 +162,7 @@ body {
 .trinket
 {
   color:black;
-  opacity: 0.9;
+  opacity: .5;
   border-radius: 100cm;
   background-color: black;
 }
