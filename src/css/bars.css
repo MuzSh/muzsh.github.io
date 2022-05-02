@@ -1,0 +1,28 @@
+
+.pyProg {
+background: rgba(63, 131, 30, 0.1);
+justify-content: flex-start;
+border-radius: 1000px;
+align-items: center;
+position: center;
+padding: 0 5px;
+display: center;
+height: 40px;
+width: flex;
+}
+
+.py-value {
+animation: py 6s normal forwards;
+box-shadow: 0 10px 40px -1px #fff;
+border-radius: 100px;
+background: rgb(17, 71, 2);
+height: 30px;
+width: 100;
+position: center;
+opacity: 90%;
+}
+
+@keyframes py {
+10% { width: 0; }
+100% { width: 100%; }
+}

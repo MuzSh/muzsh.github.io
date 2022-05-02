@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="Jekyll v4.0.1">
-    <title>Muzamal Sheikh</title>
+    <title>Muzamal Sheikh's Portfolio</title>
     
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     
@@ -36,6 +36,8 @@
     <!-- Custom styles for this template -->
     <link href="./src/css/cover.css" rel="stylesheet">
     <link href="./src/css/sections.css" rel="stylesheet">
+    <link href="./src/css/bars.css" rel="stylesheet">
+
   </head>
   <div class="video">
       <video id = "bgvid" loop muted playsinline preload>
@@ -72,7 +74,7 @@
     <p></p>
     <p></p>
     <p></p>
-    <p></p>
+    
     <p></p>
     <p></p>
     <p></p>
@@ -111,7 +113,12 @@
       <iframe src="https://trinket.io/embed/python/ed5c52a733?outputOnly=true&runOption=run&start=result" width="100%" height="111" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
     </div>
     <div class="expanding-container" id ="skills"> 
-      <div class="section one active"></div>
+      <div class="section one active">
+        <div class="pyProg">
+          <div class="py-value " > </div>
+        </div>
+      </div>
+      
       <div class="section two"></div> 
       <div class="section three"></div> 
       <div class="section four"></div> 
@@ -203,7 +210,9 @@
 
 
 <script>
-  window.onload = function() {
+  window.onload = loadPage();
+  
+  function loadPage() {
     var audio = document.getElementById("myaudio");
     audio.volume = 0.3;
     setTimeout(loadAfterTime, 31333);
