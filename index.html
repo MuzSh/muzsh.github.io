@@ -74,7 +74,6 @@
     <p></p>
     <p></p>
     <p></p>
-    
     <p></p>
     <p></p>
     <p></p>
@@ -89,6 +88,22 @@
     <p></p>
     <p></p>
     <p></p>
+    <p id="demo"></p>
+    <script>
+      <button onclick="typeWriter()">Click me</button>
+      var i = 0;
+      var txt = 'Lorem ipsum dummy text blabla.';
+      var speed = 50;
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+    </p>
     <p></p>
     <p></p>
     <p></p>
@@ -138,32 +153,30 @@
       }); 
     </script>
 
-    <p class="lead"></p>
-      <div class="expanding-container2" id ="technologies"> 
-        <div class="section2 one2 "></div> 
-        <div class="section2 two2"></div> 
-        <div class="section2 three2 active" ></div> 
-        <div class="section2 four2"></div> 
-        <div class="section2 five2"></div> 
-        <div class="section2 six2"></div> 
-        <div class="section2 seven2"></div> 
-      </div>
-      <script> 
-        const sections2 = document.querySelectorAll(".section2"); 
-        sections2.forEach((section2) => { 
-          section2.addEventListener("click", () => { 
-            sections2.forEach((section2) => { 
-              section2.classList.remove("active"); 
-            }); 
-            section2.classList.add("active"); 
+    <div class="expanding-container2" id ="technologies"> 
+      <div class="section2 one2 "></div> 
+      <div class="section2 two2"></div> 
+      <div class="section2 three2" ></div> 
+      <div class="section2 four2 active"></div> 
+      <div class="section2 five2"></div> 
+      <div class="section2 six2"></div> 
+      <div class="section2 seven2"></div> 
+      <div class="section2 eight2"></div> 
+      <div class="section2 nine2"></div> 
+      <div class="section2 ten2"></div> 
+      <div class="section2 eleven2"></div> 
+    </div>
+    <script> 
+      const sections2 = document.querySelectorAll(".section2"); 
+      sections2.forEach((section2) => { 
+        section2.addEventListener("click", () => { 
+          sections2.forEach((section2) => { 
+            section2.classList.remove("active"); 
           }); 
+          section2.classList.add("active"); 
         }); 
-      </script>
-
-      
-    </p>
-    <p class="lead"></p>
-
+      }); 
+    </script>
     <div class="container">
       <div class="row g-3">
           <div class="col-12 col-md-6 col-lg-4">
