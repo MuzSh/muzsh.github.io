@@ -4,3 +4,4 @@ git status
 git remote add origin {url}
 git commit -m ""
 git push
+d
