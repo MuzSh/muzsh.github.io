@@ -1,0 +1,149 @@
+.one { 
+opacity: 0.8;
+background: url( 
+    https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png); 
+border-radius: 20%;
+} 
+.two {
+opacity: 0.9;
+background: url( 
+    https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png);
+border-radius: 100px;
+border-width: 60cm;
+} 
+.three {
+opacity: 0.7;
+background: url( 
+    https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png);
+} 
+.four {
+opacity: 0.;
+background: url( 
+    https://cdn.worldvectorlogo.com/logos/c--4.svg);
+border-radius: 100px;
+border-width: 60cm;
+position: top;
+}
+.five {
+opacity: 0.4;
+background: url( 
+    https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png);
+}
+.six {
+opacity: 0.3;
+background: url( 
+    https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png); 
+}
+.seven {
+opacity: 0.3;
+background: url( 
+    https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png); 
+}
+.expanding-container { 
+display: flex; 
+width: 100%; 
+} 
+/* Background properties and  
+    transition effect to section */ 
+.section { 
+background-size: cover; 
+background-position: center; 
+background-repeat: repeat; 
+height: 60vh; 
+cursor: pointer; 
+flex: 2; 
+margin: 10px; 
+position: relative; 
+transition: all .6s ease-out; 
+} 
+/* section with active class will 
+
+    grow flex to 3 times */ 
+.section.active { 
+flex: 25; 
+}
+.expanding-container2 { 
+display: flex; 
+width: 100%;
+
+} 
+/*
+      ----------------------------------
+              Now entering secton2
+      ----------------------------------
+  */
+
+.one2 {
+opacity: 0.9;
+background: url( 
+    https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png); 
+} 
+.two2 {
+opacity: 0.5;
+background: url(
+    http://s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/353d1b56-887c-11e9-b9f3-7990766a9d65.jpg); 
+    
+}
+
+.three2 {
+opacity: 0.5;
+background: url( 
+    https://www.guayerd.com/wp-content/uploads//2021/04/expressjs-logo.svg);
+} 
+.four2 {
+opacity: 0.5;
+background: url( 
+    https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png); 
+}
+.five2 {
+opacity: .6;
+background: url( 
+    https://railsware.com/blog/wp-content/uploads/2018/09/2400%D1%851260-rw-blog-node-js.png); 
+}
+.six2 {
+opacity: .9;
+background: url( 
+    https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png); 
+}
+.seven2 {
+opacity: .8;
+background: url(
+    https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png); 
+}
+.eight2 {
+opacity: .8;
+background: url( 
+    https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png); 
+}
+.nine2 {
+opacity: .8;
+background: url( 
+    https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png); 
+}
+.ten2 {
+opacity: .8;
+background: url( 
+    https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png); 
+}
+.eleven2 {
+    opacity: 0.9;
+    background: url(
+        https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png); 
+    
+}
+/* Background properties and  
+    transition effect to section */ 
+.section2 { 
+background-size: cover; 
+background-position: center; 
+background-repeat: repeat; 
+height: 30vh; 
+cursor: pointer; 
+flex: 2; 
+margin: 10px; 
+position: relative; 
+transition: all .6s ease-out; 
+} 
+.section2.active { 
+flex: 25; 
+}
