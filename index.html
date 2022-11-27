@@ -156,6 +156,7 @@
       <div class="section2 ten2"></div> 
       <div class="section2 eleven2"></div> 
     </div>
+
     <script> 
       const sections2 = document.querySelectorAll(".section2"); 
       sections2.forEach((section2) => { 
@@ -167,6 +168,7 @@
         }); 
       }); 
     </script>
+
     <div class="container">
       <div class="row g-3">
           <div class="col-12 col-md-6 col-lg-4">
@@ -201,12 +203,15 @@
         </div>
       </div>
     </div>
-
+    
     <footer class="mastfoot mt-auto">
       <div class="inner">
         <p >Check out this code on <a href="https://github.com/MuzSh/muzsh.github.io" target="_blank">Github</a>!</a></p>
         <p>Connect with me on <a href="https://www.linkedin.com/in/muzamal-sheikh/" target="_blank">LinkedIn</a>!</a></p>
-        <p>© Muzamal Sheikh 2022</p>
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        <p>© Muzamal Sheikh</p>
       </div>
     </footer>
 </body>
