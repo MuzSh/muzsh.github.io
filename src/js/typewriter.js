@@ -2,10 +2,10 @@ var quoteArray = [];
 var index = 0; 
 var textPosition = 0; 
 var flag = true;
-
-var statements = ['print', 'system.out.println', 'console.log', " cout << "];
+var language = ['Python', 'Java', 'TypeScript', 'C++', 'C#', 'Kotlin', 'Go', 'BASH', 'JavaScript', "MATLAB", 'JQUERY'];
+var statements = ['print', 'system.out.println', 'console.log', "cout << ", 'Console.WriteLine', 'println', 'fmt.Printf', 'PRINT', 'document.write', 'disp', '$("body").append'];
 var rand = Math.floor(Math.random() * statements.length);
-var endings = ['', ';', ';', ';'];
+var endings = ['', ';', ';', ';', '', '', '', '?', ';', ';', ';'];
 
 loadQuote = () => {
   const url = 'https://api.quotable.io/random';
