@@ -24,8 +24,9 @@ loadQuote = () => {
       + '<span style="color:lightsalmon">'
       + "'"
       + data.content
+      + "'"
       + '<span style="color:lightblue">'
-      + "')"
+      + ")"
       + '<span style="color:white">'
       + endings[rand];
    })
