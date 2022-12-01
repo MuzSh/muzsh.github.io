@@ -1,8 +1,7 @@
-
+window.onload = loadPage();
 function loadPage() {
     var audio = document.getElementById("myaudio");
-    audio.volume = 0.3;
-    setTimeout(loadintro, 1);
+    audio.volume = 0.3; 
     setTimeout(loadAfterTime, 31333);
     setTimeout(loadAfterTime2, 63000);
     setTimeout(loadAfterTime3, 159000);
