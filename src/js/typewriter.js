@@ -30,7 +30,7 @@ typewriter = () => {
   document.querySelector("#quote").innerHTML = quoteArray[index].substring(0, textPosition) + '<span>\u25AE</span>';
 
   if(textPosition++ != quoteArray[index].length){
-    setTimeout("typewriter()", 6.66);
+    setTimeout("typewriter()", 66.6);
   }
   else{
     quoteArray[index] = ' ';
