@@ -1,4 +1,4 @@
-developer = {      
+developer = {
     "name": "Muzamal Sheikh",
     "aspiration": ["Software Developer", "Software Engineer", "Full-Stack Developer"],
     "interests": ["Artificial Intelligence", "Machine Learning", "Data Science & Analytics"],
@@ -10,7 +10,7 @@ developer = {
     "webDevelopment": ["React", "Node"],
     "database": ["PostgreSQL", "MongoDB"],
     "technologies": ["VS Code"]
-}        
+}
 
 for i in developer:
     print(f"{i}: {developer[i]}")
