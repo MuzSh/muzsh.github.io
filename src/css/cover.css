@@ -46,8 +46,8 @@ a:hover {
     transform: translateX(-50%) translateY(-50%);
     background: url('') no-repeat;
     background-size: cover;
+    background-color: black;
     transition: 1s opacity;
-    filter:opacity(44%)
   }
 .btn-secondary,
 .btn-secondary:hover,
@@ -61,7 +61,6 @@ html,
 body {
   height: 100%;
   background-color: #333;
-  opacity: 0.9;
 }
 
 body {
