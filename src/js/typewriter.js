@@ -2,15 +2,17 @@ var quoteArray = [];
 var index = 0; 
 var textPosition = 0; 
 var flag = true;
-var language = ['Python', 'Java', 'TypeScript', 'C++', 'C#', 'Kotlin', 'Go', 'BASH', 'JavaScript', "MATLAB", 'JQUERY'];
-var statements = ['print', 'system.out.println', 'console.log', "cout << ", 'Console.WriteLine', 'println', 'fmt.Printf', 'PRINT', 'document.write', 'disp', '$("body").append'];
+var language = ['Python', 'Java', 'TypeScript', 'C++', 'C#', 'Kotlin', 'Go', 'BASH', 'JavaScript', "MATLAB", 'JQUERY', 'R'];
+var statements = ['print', 'system.out.println', 'console.log', "cout << ", 'Console.WriteLine', 'println', 'fmt.Printf', 'PRINT', 'document.write', 'disp', '$("body").append', 'cat'];
 var rand = Math.floor(Math.random() * statements.length);
-var endings = ['', ';', ';', ';', '', '', '', '?', ';', ';', ';'];
+var endings = ['', ';', ';', ';', '', '', '', '?', ';', ';', ';', ''];
+
+console.log(rand)
 
 loadQuote = () => {
+  rand = Math.floor(Math.random() * statements.length);
   const url = 'https://api.quotable.io/random';
   fetch(url)
-
   .then(response => {
     if (!response.ok) throw Error(response.statusText);
       return response.json();
@@ -45,7 +47,7 @@ typewriter = () => {
 
 
   if(textPosition++ != quoteArray[index].length){
-    setTimeout("typewriter()", 42.666);
+    setTimeout("typewriter()", 42.60);
   }
   else{
     quoteArray[index] = ' ';
