@@ -7,7 +7,6 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <html lang="en">
   <head>
-    <script src="oper.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -37,8 +36,9 @@
     <link href="./src/css/cover.css" rel="stylesheet">
     <link href="./src/css/sections.css" rel="stylesheet">
     <link href="./src/css/bars.css" rel="stylesheet">
-
+    <link href="./src/css/quote.css" rel="stylesheet">
   </head>
+
   <div class="video">
       <video id = "bgvid" loop muted playsinline preload>
         <source src= "./src/video/redeye.mp4">
@@ -59,11 +59,17 @@
         <div id='game'>
       </div>
     </header>
-    
+  
+
+    <div class="container">
+      <script src="./src/js/typewriter.js"></script>
+      <div id="typewriter">
+        <p id="quote"></p>
+      </div>
+    </div>
     <main role="main" class="inner cover">
       <h1 class="cover-heading"></h1>
     </main>
-    
     <p>
       <audio controls autoplay playsinline loop id="myaudio" >
         <source src="./src/audio/Ochre - Anaphora.mp3" type="audio/mp3" autoplay>
@@ -94,29 +100,22 @@
     <p></p>
     <p></p>
     <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <div class="trinket">
-      <iframe src="https://trinket.io/embed/python/ed5c52a733?outputOnly=true&runOption=run&start=result" width="100%" height="111" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-    </div>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+      <div class= "time" id="root"></div>
+      <!-- Load React. -->
+      <script
+        src="https://unpkg.com/react/umd/react.development.js"
+        crossorigin
+      ></script>
+      <script
+        src="https://unpkg.com/react-dom/umd/react-dom.development.js"
+        crossorigin
+      ></script>
+  
+      <!-- Load our React component. -->
+      <script src="./src/js/time.js" defer type="text/babel"></script>
+    
     <div class="expanding-container" id ="skills"> 
       <div class="section one active">
         <div class="pyProg">
@@ -214,54 +213,10 @@
         <p>© Muzamal Sheikh</p>
       </div>
     </footer>
-</body>
+  </body>
 
 
-<script>
-  window.onload = loadPage();
- 
-  function loadPage() {
-    var audio = document.getElementById("myaudio");
-    audio.volume = 0.3;
-    setTimeout(loadintro, 1);
-    setTimeout(loadAfterTime, 31333);
-    setTimeout(loadAfterTime2, 63000);
-    setTimeout(loadAfterTime3, 159000);
-    setTimeout(loadAfterTime4, 224000);
-    setTimeout(loadAfterTime5, 262000);
-    //setTimeout(loadAfterTime3, 294934)
-    //setTimeout(loadAfterTime3, 557934)
-    };
-    function loadAfterTime5() 
-    {
-      document.querySelector('bgvid').defaultPlaybackRate = 0.25
-    }
-    function loadAfterTime4() 
-    {
-      var video = document.getElementById('bgvid');
-      video.setAttribute('src', './src/video/inf.mp4');
-      video.load();
-      video.play();
-    }
-    function loadAfterTime3() 
-    {
-      var video = document.getElementById('bgvid');
-      video.setAttribute('src', './src/video/glb.mp4');
-      video.load();
-      video.play();
-    }
-    function loadAfterTime2() 
-    {
-      var video = document.getElementById('bgvid');
-      video.setAttribute('src', './src/video/redeye2.mp4');
-      video.load();
-      video.play();
-    }
-    function loadAfterTime() 
-    {
-      var video = document.getElementById("bgvid");
-      video.play();
-      // code you need to execute goes here. 
-    }
- </script>
+  <script src="./src/js/vidChange.js">
+    window.onload = loadPage();
+  </script>
 </html>
