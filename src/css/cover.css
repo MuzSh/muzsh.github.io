@@ -21,6 +21,7 @@ a:hover {
   border: .05rem solid #fff;
 }
 
+
 html,
 body {
   height: 100%;
@@ -55,38 +56,6 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
-}
-
-.nav-masthead .nav-link {
-  padding: 1rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
-}
-
-.nav-masthead .nav-link+.nav-link {
-  margin-left: 1rem;
-}
-
-.nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-
-  .nav-masthead {
-    float: center;
-  }
 }
 
 .cover {
@@ -125,16 +94,4 @@ body {
 .container-fluid {
   margin-left: 0px !important;
   margin-right: 0px !important;
-}
-
-/*expanding cards
-*/
-
-.divider1{
-  padding-bottom: 75vh;
-}
-
-
-.divid50{
-  padding-bottom: 50vh;
 }
