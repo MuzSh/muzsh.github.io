@@ -19,10 +19,10 @@ loadQuote = () => {
    })
 
    .then(data => {
-      quoteArray[index] = '<span style="color:white">' + 
-      statements[rand] + 
-      '<span style="color:lightblue">' + 
-      "(" 
+      quoteArray[index] = '<span style="color:white">'
+      + statements[rand] 
+      + '<span style="color:lightblue">'
+      + "(" 
       + '<span style="color:lightsalmon">'
       + "'"
       + data.content
