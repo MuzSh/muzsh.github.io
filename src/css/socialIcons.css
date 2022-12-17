@@ -1,13 +1,37 @@
 .social-icons {
     width: auto;
     opacity: 10;
-}
+    border-radius: 10ch;
+    background: url(https://cdn.worldvectorlogo.com/logos/c--4.svg);
 
-.icon {
-    font-size: 24px;
 }
 
 img {
     height: 50px;
     width: 50px;
+}
+
+
+.socialHover {
+    display: inline;
+    width: flex;
+    height: flex;
+}
+
+.socialHover:hover {
+    height: auto;
+    box-shadow: 0 0 10px #ffff00;
+    animation: glow 3s ease-in-out 1000ms alternate;
+
+}
+
+
+@-webkit-keyframes glow {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
 }
