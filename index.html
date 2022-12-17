@@ -40,27 +40,31 @@
   <link href="./src/css/cover.css" rel="stylesheet">
   <link href="./src/css/clockDate.css" rel="stylesheet">
   <link href="./src/css/dividers.css" rel="stylesheet">
-  <link href="./src/css/sections.css" rel="stylesheet">
+  <link href="./src/css/skills.css" rel="stylesheet">
   <link href="./src/css/bars.css" rel="stylesheet">
   <link href="./src/css/quote.css" rel="stylesheet">
   <link href="./src/css/input.css" rel="stylesheet">
+  <link href="./src/css/projects.css" rel="stylesheet">
+  <link href="./src/css/contact.css" rel="stylesheet">
 </head>
 
+<!-- video -->
 <div class="video">
   <video id="bgvid" loop muted playsinline preload>
     <source src="./src/video/redeye.mp4">
 </div>
 
+<!-- navbar -->
 <body class="text-center">
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
       <div class="inner">
         <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link " href="#skills">Skills </a>
           <a class="nav-link" href="https://1drv.ms/b/s!AqOeTY-UH34libVUw1_xWI8C6AwSfQ" target="_blank">Résumé</p>
+          <a class="nav-link " href="#skills">Skills </a>
           <a class="nav-link " href="#technologies">Technologies </a>
-          <!-- <a class="nav-link " href="#projects">Projects </a> -->
-          <!-- <a class="nav-link" href="#contact">Contact</a> -->
+          <a class="nav-link " href="#projects">Projects </a>
+          <a class="nav-link " href="#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -74,13 +78,13 @@
 
     <!-- the padded seperator -->
     <div class="divider1"></div>
-
+    <!-- Time component  -->
     <div class="time" id="root"></div>
     <!-- Load React. -->
     <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
 
-    <!-- Load our React component. -->
+    <!-- Load the React component. -->
     <script src="./src/js/time.js" defer type="text/babel"></script>
 
     <div class="divid50"></div>
@@ -115,6 +119,7 @@
       <div class="section six"></div>
       <div class="section seven"></div>
     </div>
+    <!-- on click functions -->
     <script>
       const sections = document.querySelectorAll(".section");
       sections.forEach((section) => {
@@ -153,51 +158,71 @@
         });
       });
     </script>
-    <!-- 
-    <div class="container">
-      <div class="row g-3">
-        <div class="col-12 col-md-6 col-lg-4">
+    <section id = "projects">
+      <h>Projects</h>
+      <div class="row">
+        <div class="column">
           <div class="card">
-            <img src="" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title" id="projects">This Website</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary"></a>
-            </div>
+            <h3>Machine Learning Data Analysis</h3>
+            <p>Utilized machine learning models to train, test, and predict the outcome of breast cancer dataset</p>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="column">
           <div class="card">
-            <img src="" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Next One</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary"> </a>
-            </div>
+            <h3>Full Stack Mern Bank</h3>
+            <p>Encompasses a full-fledged MERN stack exchange bank hosted on heroku server.</p>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="column">
           <div class="card">
-            <img src="" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Another One</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary"> </a>
-            </div>
+            <h3>This Github Portfolio</h3>
+            <p>This website you are currently visiting, made using the mern stack</p>
+            <p>(Work in progress)</p>
           </div>
         </div>
       </div>
-    </div> -->
+    </section>
 
+    <section id="contact" class="contactMe bg-dark">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <img src="/src/images/iq3.jpg" alt="Contact Us" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <h2 class="section-title text-primary mb-3">Contact Us</h2>
+            <p class="section-description mb-5">
+              Let me know you stopped by...Or don't!
+            </p>
+          </p>
+            <form action="https://formsubmit.co/0muzsh1@gmail.com" method="post" class="form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+      
     <footer class="mastfoot mt-auto">
       <div class="inner">
-        <p>Check out this code on <a href="https://github.com/MuzSh/muzsh.github.io" target="_blank">Github</a>!</a></p>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/muzamal-sheikh/" target="_blank">LinkedIn</a>!</a>
+        <p>
+          <strong>©</strong> Muzamal Sheikh
+          <script type="text/javascript">document.write( new Date().getFullYear() );</script>.
         </p>
-        <script>
-          document.write(new Date().getFullYear())
-        </script>
-        <p>© Muzamal Sheikh</p>
       </div>
     </footer>
 </body>
