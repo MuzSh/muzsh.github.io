@@ -1,3 +1,11 @@
+.one:hover,.two:hover,.three:hover,.four:hover,.five:hover,.six:hover,.seven:hover{
+    box-shadow: 0 0 42px #ffff00;
+}
+
+.one2:hover,.two2:hover,.three2:hover,.four2:hover,.five2:hover,.six2:hover,.seven2:hover,.eight2:hover,.nine2:hover,.ten2:hover,.eleven2:hover{
+    box-shadow: 0 0 42px #ffff00;
+}
+
 .one {
     opacity: 0.8;
     background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png);
