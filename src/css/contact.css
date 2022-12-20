@@ -11,3 +11,10 @@
     opacity: 90%;
     font-family: monospace;
 }
+
+#contact {
+    color: white;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: xx-large;
+}

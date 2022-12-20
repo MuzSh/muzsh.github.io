@@ -46,28 +46,6 @@
     }
 }
 
-#skills {
-    color: black;
-}
-
-#technologies {
-    color: black;
-
-}
-
-#projects {
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style:normal;
-    font-style: italic;
-    font-variant: small-caps;
-}
-
-#contact {
-    color: white;
-    font-variant: small-caps;
-}
-
 
 @-webkit-keyframes glow {
     from {

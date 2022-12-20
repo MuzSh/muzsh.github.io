@@ -1,3 +1,8 @@
+
+.time:hover{
+    box-shadow: 0 0 42px #ffff00;
+}
+
 .time {
     margin: auto;
     display: flex;
@@ -9,7 +14,7 @@
     border-radius: 90ch;
     color: white;
     width: 42%;
-    animation: glow 3s ease-in-out 1000ms alternate;
+    animation: glow 3s ease-in-out 10000ms alternate;
 }
 
 .time p {

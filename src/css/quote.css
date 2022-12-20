@@ -1,22 +1,28 @@
-  #typewriter {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    color: lightsalmon;
-    border-color: black;
-    border-radius: 1ch;
-    margin: auto;
-    font-family: monospace;
-  }
+#typewriter:hover {
+  transform: scale(111%);
+  box-shadow: 0 0 420px green;
+}
 
-  #typewriter p {
-    font-size: 3.2vmax;
-    font-style: italic;
-  }
+#typewriter {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  color: lightsalmon;
+  border-color: black;
+  border-radius: 4ch;
+  margin: auto;
+  font-family: monospace;
+}
 
-  span {
-    animation: blinker 1s linear infinite;
-  }
+#typewriter p {
+  font-size: 3.2vmax;
+  /* font-style: italic; */
+  font-variant: small-caps;
+}
+
+span {
+  animation: blinker 1s linear infinite;
+}

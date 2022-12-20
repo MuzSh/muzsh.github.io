@@ -1,9 +1,7 @@
-{
-  box-sizing: border-box;
-}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
 }
 
 /* Float four columns side by side */
@@ -44,4 +42,12 @@ body {
   border-radius: 4.2ch;
   font-family: 'Courier New', Courier, monospace;
   /* background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fsitiobigdata.com%2F2019%2F06%2F09%2Fpython-configurar-entorno-machine-learning%2F&psig=AOvVaw1mE7_WIek0WCLYIKuBD91B&ust=1671334546998000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOCuwMTc__sCFQAAAAAdAAAAABAe); */
+}
+
+#projects {
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style:normal;
+  font-style: italic;
+  font-variant: small-caps;
 }
