@@ -1,9 +1,13 @@
-.one:hover,.two:hover,.three:hover,.four:hover,.five:hover,.six:hover,.seven:hover{
-    box-shadow: 0 0 42px #ffff00;
-}
-
-.one2:hover,.two2:hover,.three2:hover,.four2:hover,.five2:hover,.six2:hover,.seven2:hover,.eight2:hover,.nine2:hover,.ten2:hover,.eleven2:hover{
-    box-shadow: 0 0 42px #ffff00;
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.seven:hover {
+    /* box-shadow: 0 0 42px #ffff00; */
+    transform: scale(111%);
+    opacity: 100%;
 }
 
 .one {
@@ -47,7 +51,51 @@
     background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png);
 }
 
+.section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 60vh;
+    cursor: pointer;
+    flex: 2;
+    margin: 10px;
+    position: relative;
+    transition: all .6s ease-out;
+}
+
+.section.active {
+    flex: 25;
+}
+
+
 .expanding-container {
     display: flex;
     width: 100%;
+}
+
+
+#skills {
+    color: black;
+}
+
+
+/* Background properties and  
+    transition effect to section */
+.section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 60vh;
+    cursor: pointer;
+    flex: 2;
+    margin: 10px;
+    position: relative;
+    transition: all .6s ease-out;
+}
+
+/* section with active class will 
+    
+        grow flex to 3 times */
+.section.active {
+    flex: 25;
 }
