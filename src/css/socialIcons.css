@@ -12,4 +12,7 @@
 
 .socialHover:hover {
     box-shadow: 0 0 10px #ffff00;
+    background: url(https://cdn.worldvectorlogo.com/logos/c--4.svg);
+    transform: scale(1.42);
+
 }
