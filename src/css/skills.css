@@ -10,77 +10,53 @@
     opacity: 100%;
 }
 
-.one {
-    opacity: 0.8;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png);
-    border-radius: 20%;
-}
-
-.two {
-    opacity: 0.9;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png);
-    border-radius: 100px;
-    border-width: 60cm;
-}
-
-.three {
-    opacity: 0.7;
-    background: url(https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png);
-}
-
-.four {
-    opacity: 0.;
-    background: url(https://cdn.worldvectorlogo.com/logos/c--4.svg);
-    border-radius: 100px;
-    border-width: 60cm;
-    position: top;
-}
-
-.five {
-    opacity: 0.4;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png);
-}
-
-.six {
-    opacity: 0.3;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png);
-}
-
-.seven {
-    opacity: 0.3;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png);
-}
-
-.section {
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    height: 60vh;
-    cursor: pointer;
-    flex: 2;
-    margin: 10px;
-    position: relative;
-    transition: all .6s ease-out;
-}
-
-.section.active {
-    flex: 25;
-}
-
-
 .expanding-container {
     display: flex;
     width: 100%;
 }
-
-
-#skills {
-    color: black;
+/* python */
+.one {
+    opacity: 0.8;
+    background: url(/src/images/tools/python.png);
+    border-radius: 20%;
+    
+}
+/* cpp */
+.two {
+    opacity: 0.9;
+    background: url(/src/images/tools/c++.png);
+    border-radius: 100px;
+    border-width: 60cm;
+}
+/* java */
+.three {
+    opacity: 0.7;
+    background: url(/src/images/tools/java.png);
+}
+/* c# */
+.four {
+    opacity: 0.;
+    background: url(/src/images/tools/c--4.svg);
+    border-radius: 100px;
+    border-width: 60cm;
+    position: top;
+}
+/* typescript */
+.five {
+    opacity: 0.4;
+    background: url(/src/images/tools/typescript.png);
+}
+/* kotlin */
+.six {
+    opacity: 0.3;
+    background: url(/src/images/tools/kotlin.png);
+}
+/* go */
+.seven {
+    opacity: 0.3;
+    background: url(/src/images/tools/go.png);
 }
 
-
-/* Background properties and  
-    transition effect to section */
 .section {
     background-size: cover;
     background-position: center;
@@ -93,9 +69,10 @@
     transition: all .6s ease-out;
 }
 
-/* section with active class will 
-    
-        grow flex to 3 times */
 .section.active {
     flex: 25;
+}
+
+#skills {
+    color: black;
 }

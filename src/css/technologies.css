@@ -20,60 +20,63 @@
 
 }
 
+/* vs code */
 .one2 {
     opacity: 0.9;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png);
+    background: url(/src/images/tools/vscode.png);
 }
 
+/* mongodb */
 .two2 {
     opacity: 0.5;
-    background: url(http://s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/353d1b56-887c-11e9-b9f3-7990766a9d65.jpg);
-
+    background: url(/src/images/tools/mongodb.jpg);
 }
 
+/* express.js */
 .three2 {
     opacity: 0.5;
-    background: url(https://www.guayerd.com/wp-content/uploads//2021/04/expressjs-logo.svg);
+    background: url(/src/images/tools/expressjs.svg);
 }
 
+/* react.js */
 .four2 {
     opacity: 0.8;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png);
+    background: url(/src/images/tools/react.png);
 }
-
+/* node.js */
 .five2 {
     opacity: .6;
-    background: url(https://assets.website-files.com/61ca3f775a79ec5f87fcf937/6202fd1982f55d90a1052e2f_node-js-javascript-database-mongodb-native-cf37354ef2b2ff993afb35b1a52a1a88.png);
+    background: url(/src/images/tools/nodejs.png);
 }
-
+/* bootstrap */
 .six2 {
     opacity: .9;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png);
+    background: url(/src/images/tools/bootstrap.png);
 }
-
+/* git */
 .seven2 {
     opacity: .8;
-    background: url(https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png);
+    background: url(/src/images/tools/git.png);
 }
-
+/* jupyter notebook */
 .eight2 {
     opacity: .8;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png);
+    background: url(/src/images/tools/jupyter.png);
 }
-
+/* html */
 .nine2 {
     opacity: .8;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png);
+    background: url(/src/images/tools/html.png);
 }
-
+/* css */
 .ten2 {
     opacity: .8;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png);
+    background: url(/src/images/tools/css.png);
 }
-
+/* js */
 .eleven2 {
     opacity: 0.9;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png);
+    background: url(/src/images/tools/js.png);
 
 }
 
