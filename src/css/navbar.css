@@ -1,20 +1,26 @@
 .nav-masthead .nav-link {
     font-weight: 70;
     font-variant-east-asian: simplified;
-    /* font-variant: small-caps; */
+    font-variant: small-caps;
     font-stretch:ultra-condensed;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: transparent;
     border-bottom: .25rem solid transparent;
     /* background-image: url(/src/images/010010000110010101101100011011000110111100100001.webp); */
     border-radius: 100ch;
+    font-style: italic;
     box-shadow: #e60073;
     color: white;
+    opacity: 99%;
 }
 
 .nav-masthead .nav-link:hover {
     transform: scale(1.23);
     color: darkorange;
+    background-image: url(/src/images/code.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 100%;
 }
 
 .nav-masthead .nav-link:focus {
@@ -53,12 +59,13 @@
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style:normal;
-
+    font-style: italic;
+    font-variant: small-caps;
 }
 
 #contact {
     color: white;
-
+    font-variant: small-caps;
 }
 
 
