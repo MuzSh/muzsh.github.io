@@ -1,11 +1,19 @@
 <!doctype html>
-<!-- scrips imports -->
+<!-- scripts imports -->
 <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+<!-- Three.js core -->
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+        ></script>
 
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- " I'm not a robot verification "-->
 <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -51,8 +59,6 @@
   <link href="./src/css/contact.css" rel="stylesheet">
   <link href="./src/css/socialIcons.css" rel="stylesheet">
 </head>
-
-<!-- video -->
 <div class="video">
   <video id="bgvid" loop muted playsinline preload>
     <source src="./src/video/redeye.mp4">
@@ -268,7 +274,131 @@
       </div>
     </footer>
 
-    
+    <style>
+      .webgl {
+        position:absolute;
+        top: 0;
+        left: 0;
+        outline: none;
+        z-index: -1;
+        border-radius: 100ch;
+      }
+    </style>
+
+    <canvas class="webgl"></canvas>
+</body>
+<body>
+  <script type="text/javascript">
+
+    // Texture
+    const textureLoader = new THREE.TextureLoader();
+    const normalTexture = textureLoader.load("src/images/01b.jpg");
+
+    // Canvas
+    const canvas = document.querySelector("canvas.webgl");
+
+    // Scene
+    const scene = new THREE.Scene();
+    // scene.setClearColor(null)
+    // renderer.setClearColor( 0x000000, 1); // the default
+
+    // Objects
+    const geometry = new THREE.BoxGeometry(5, 2.5, 2.5);
+
+    // Materials
+    const material = new THREE.MeshStandardMaterial({
+      color: 0xffffff,
+      transparent: true,
+      // opacity: 0.5
+      }
+    );
+    // material.setClearColor(null);
+    material.map = normalTexture;
+
+    // Mesh
+    const shape = new THREE.Mesh(geometry, material);
+    scene.add(shape);
+
+    // Lights
+    const pointLight = new THREE.PointLight(0xffffff, 4);
+    pointLight.position.x = 5;
+    pointLight.position.y = 5;
+    pointLight.position.z = 5;
+    scene.add(pointLight);
+
+    /**
+     * Sizes
+     */
+    const sizes = {
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+
+    window.addEventListener("resize", () => {
+      // Update sizes
+      sizes.width = window.innerWidth;
+      sizes.height = window.innerHeight;
+
+      // Update camera
+      camera.aspect = sizes.width / sizes.height;
+      camera.updateProjectionMatrix();
+
+      // Update renderer
+      renderer.setSize(sizes.width, sizes.height);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    });
+
+    /**
+     * Camera
+     */
+    // Base camera
+    const camera = new THREE.PerspectiveCamera(
+      75,
+      sizes.width / sizes.height,
+      0.1,
+      100
+    );
+    camera.position.x = 0;
+    camera.position.y = 0;
+    camera.position.z = 5;
+    scene.add(camera);
+
+    /**
+     * Renderer
+     */
+    const renderer = new THREE.WebGLRenderer({
+      alpha: true,
+      canvas: canvas,
+    });
+    renderer.setSize(sizes.width, sizes.height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1));
+
+    /**
+     * Animate
+     */
+
+    const clock = new THREE.Clock();
+
+    const tick = () => {
+      const elapsedTime = clock.getElapsedTime();
+
+      // Update objects
+      shape.rotation.y = 0.042 * elapsedTime;
+      shape.rotation.x = 0.042 * elapsedTime;
+      shape.rotation.z = 0.042 * elapsedTime;
+
+      // Update Orbital Controls
+      // controls.update()
+
+      // Render
+      renderer.render(scene, camera);
+
+      // Call tick again on the next frame
+      window.requestAnimationFrame(tick);
+    };
+
+    tick();
+  </script>
 </body>
 <!-- changes bacground video -->
 <script src="./src/js/vidChange.js">

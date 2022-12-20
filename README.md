@@ -1,2 +1,2 @@
 # muzs.io
-My Portfolio Website
+# My Personal Portfolio
