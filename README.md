@@ -1,2 +1,2 @@
-# git amuzs.io
+# muzs.io
 My Portfolio Website
