@@ -292,7 +292,20 @@
 
     // Texture
     const textureLoader = new THREE.TextureLoader();
-    const normalTexture = textureLoader.load("src/images/01b.jpg");
+
+    var materials = [
+      "src/images/iq3.jpg", //right
+      "src/images/code.jpeg", //left
+      "src/images/01b.jpg", //top
+      "src/images/01b.jpg", //bottom 
+      "src/images/01b.jpg", //back
+      "src/images/01b.jpg", //first
+    ].map(pic => {
+    return new THREE.MeshLambertMaterial({map: textureLoader.load(pic)});
+    });
+    
+    const Textures = textureLoader.load(textureLoader);
+    // const Textures = textureLoader.load("src/images/01b.jpg");
 
     // Canvas
     const canvas = document.querySelector("canvas.webgl");
@@ -303,20 +316,21 @@
     // renderer.setClearColor( 0x000000, 1); // the default
 
     // Objects
-    const geometry = new THREE.BoxGeometry(5, 2.5, 2.5);
+    const geometry = new THREE.BoxBufferGeometry(5, 2.5, 2.5);
 
     // Materials
-    const material = new THREE.MeshStandardMaterial({
-      color: 0xffffff,
-      transparent: true,
-      // opacity: 0.5
-      }
-    );
-    // material.setClearColor(null);
-    material.map = normalTexture;
 
-    // Mesh
-    const shape = new THREE.Mesh(geometry, material);
+    // const material = new THREE.MeshStandardMaterial({
+    //   color: 0xffffff,
+    //   transparent: true,
+    //   // opacity: 0.5
+    //   }
+    // );
+    // material.setClearColor(null);
+    // material.map = Textures;
+
+    // materials
+    const shape = new THREE.Mesh(geometry, materials);
     scene.add(shape);
 
     // Lights
