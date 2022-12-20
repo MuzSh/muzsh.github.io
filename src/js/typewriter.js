@@ -46,7 +46,6 @@ typewriter = () => {
 
   document.querySelector("#quote").innerHTML = quoteArray[index].substring(0, textPosition) + '<span style="color:white">\u25AE</span>';
 
-
   if(textPosition++ != quoteArray[index].length){
     setTimeout("typewriter()", 42.60);
   }

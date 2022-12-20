@@ -21,6 +21,7 @@ position: center;
 opacity: 70%;
 }
 
+/* level of confidence */
 @keyframes py {
 10% { width: 0; }
 100% { width: 77%; }

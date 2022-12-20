@@ -1,14 +1,24 @@
 .nav-masthead .nav-link {
-    padding: 1rem 0;
-    font-weight: 700;
-    color: white;
+    font-weight: 70;
+    font-variant-east-asian: simplified;
+    /* font-variant: small-caps; */
+    font-stretch:ultra-condensed;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: transparent;
     border-bottom: .25rem solid transparent;
+    /* background-image: url(/src/images/010010000110010101101100011011000110111100100001.webp); */
+    border-radius: 100ch;
+    box-shadow: #e60073;
+    color: white;
 }
 
-.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:hover {
+    transform: scale(1.23);
+    color: darkorange;
+}
+
 .nav-masthead .nav-link:focus {
     border-bottom-color: rgba(255, 255, 255, .25);
-    /* color: white; */
 }
 
 .nav-masthead .nav-link+.nav-link {
@@ -36,21 +46,28 @@
 
 #technologies {
     color: black;
-    
+
 }
 
+#projects {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:normal;
+
+}
 
 #contact {
     color: white;
 
 }
 
+
 @-webkit-keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }
 
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
-  }
+}

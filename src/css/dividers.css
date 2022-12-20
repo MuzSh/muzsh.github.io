@@ -1,10 +1,12 @@
 .divider1{
     padding-bottom: 60vh;
+    z-index: 3;
   }
   
   
   .divid50{
     padding-bottom: 50vh;
+    z-index: 2;
   }
   
   
