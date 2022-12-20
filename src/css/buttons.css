@@ -1,0 +1,11 @@
+.submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: transform 0.3s;
+    /* Add a transition effect for the transformation */
+}
+
+
+.submit:hover {
+    transform: scale(1.42);
+}
