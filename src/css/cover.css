@@ -1,11 +1,7 @@
-/*
- * Globals
- */
 html {
   scroll-behavior: smooth;
 }
 
-/* Links */
 a,
 a:focus,
 a:hover {
@@ -89,8 +85,7 @@ body {
   color: white;
 }
 
-/*--- Bootstrap Mobile Gutter Fix --*/
-/* .row, */
+/* bootstrap mobile gutter fix */
 .container-fluid {
   margin-left: 0px !important;
   margin-right: 0px !important;

@@ -1,3 +1,17 @@
+.column:hover,.card:hover{
+  transform: scale(106%);
+  transition: all 1s ease-in-out;
+  font-variant: small-caps;
+  /* font-weight: 700; */
+  font-size: x-large;
+  font-style: normal;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  box-shadow: yellow;
+  filter: invert(100%);
+  /* filter: sepia(); */
+  /* filter: brightness(142%) */
+  flex-direction: column;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -44,10 +58,13 @@ body {
   /* background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fsitiobigdata.com%2F2019%2F06%2F09%2Fpython-configurar-entorno-machine-learning%2F&psig=AOvVaw1mE7_WIek0WCLYIKuBD91B&ust=1671334546998000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOCuwMTc__sCFQAAAAAdAAAAABAe); */
 }
 
+
+
 #projects {
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style:normal;
   font-style: italic;
   font-variant: small-caps;
+  
 }
