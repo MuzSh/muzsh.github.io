@@ -6,8 +6,8 @@ var materials = [
   "src/images/code.jpeg", //left
   "src/images/01b.jpg", //top
   "src/images/01b.jpg", //bottom 
+  "src/images/01b.jpg", //front
   "src/images/01b.jpg", //back
-  "src/images/01b.jpg", //first
 ].map(pic => {
 return new THREE.MeshLambertMaterial({map: textureLoader.load(pic)});
 });
@@ -82,7 +82,7 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.x = 0;
 camera.position.y = 0;
-camera.position.z = 5;
+camera.position.z = 4.20;
 scene.add(camera);
 
 /**
