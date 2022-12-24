@@ -101,13 +101,23 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1));
 
 const clock = new THREE.Clock();
 
+const speed = [0.042,0.42, 0.0042]
+
+//   setInterval(function(){
+//     speed[0]= speed[0]+0.42
+//     console.log(speed)
+// }, 5000);
 const tick = () => {
   const elapsedTime = clock.getElapsedTime();
-  const vals = [0.42,0.02442,0.024]
+  // console.log(vals)
   // Update objects
-  shape.rotation.y = (vals[0]) * elapsedTime;
-  shape.rotation.x = (vals[1]) * elapsedTime;
-  shape.rotation.z = (vals[2]) * elapsedTime;
+  // setInterval(function(){
+    // vals[0]= vals[0]+0.01
+    // console.log(vals)
+// }, 5000);
+  shape.rotation.y = (speed[0]) * elapsedTime;
+  shape.rotation.x = (speed[1]) * elapsedTime;
+  shape.rotation.z = (speed[2]) * elapsedTime;
 
   // console.log(elapsedTime)
 
