@@ -82,7 +82,7 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.x = 0;
 camera.position.y = 0;
-camera.position.z = 4.20;
+camera.position.z = 5;
 scene.add(camera);
 
 /**
@@ -103,11 +103,13 @@ const clock = new THREE.Clock();
 
 const tick = () => {
   const elapsedTime = clock.getElapsedTime();
-
+  const vals = [0.42,0.02442,0.024]
   // Update objects
-  shape.rotation.y = 0.042 * elapsedTime;
-  shape.rotation.x = 0.042 * elapsedTime;
-  shape.rotation.z = 0.042 * elapsedTime;
+  shape.rotation.y = (vals[0]) * elapsedTime;
+  shape.rotation.x = (vals[1]) * elapsedTime;
+  shape.rotation.z = (vals[2]) * elapsedTime;
+
+  // console.log(elapsedTime)
 
   // Update Orbital Controls
   // controls.update()
