@@ -21,6 +21,7 @@
 
   <!-- import styles -->
   <link href="./src/css/cover.css" rel="stylesheet">
+  <link href="./src/css/audio.css" rel="stylesheet">
   <link href="./src/css/model.css" rel="stylesheet">
   <link href="./src/css/video.css" rel="stylesheet">
   <link href="./src/css/navbar.css" rel="stylesheet">
@@ -48,7 +49,7 @@
   <script src="/src/js/smooth.js"></script>
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
-      <div class="inner">
+      <div class="sticky">
         <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link" href="https://1drv.ms/b/s!AqOeTY-UH34libVUw1_xWI8C6AwSfQ" target="_blank">Résumé</p>
             <a class="nav-link " onclick="scrollToSection('skills')">Skills </a>
@@ -59,17 +60,15 @@
       </div>
     </header>
 
-
+    <!-- the padded seperator -->
+    <div class="divider1"></div>
+    
     <!-- audio cuz why not -->
     <p>
-      <audio controls autoplay playsinline id="myaudio">
+      <audio class="aud" controls autoplay playsinline id="myaudio">
         <source src="./src/audio/Ochre - Anaphora.mp3" type="audio/mp3" autoplay>
       </audio>
     </p>
-
-    <!-- the padded seperator -->
-    <div class="divider1"></div>
-
     
     <!-- Time component  -->
     <div class="time" id="root"></div>
