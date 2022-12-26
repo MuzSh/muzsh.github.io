@@ -1,8 +1,9 @@
 .webgl {
   position:absolute;
-  top: 0;
-  left: 0;
-  outline: none;
+  /* top: -200; */
+  /* left: -500; */
   z-index: -5;
+  /* zoom: 100%; */
+  -ms-zoom-animation: default;
   /* border-radius: 100ch; */
 }

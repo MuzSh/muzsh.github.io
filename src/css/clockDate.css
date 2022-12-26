@@ -5,6 +5,7 @@
 
 .time {
     margin: auto;
+    position: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +16,7 @@
     color: white;
     width: 42%;
     animation: glow 3s ease-in-out 10000ms alternate;
+    /* z-index: 10; */
 }
 
 .time p {
