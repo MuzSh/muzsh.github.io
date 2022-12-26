@@ -8,11 +8,18 @@
 .eight2:hover,
 .nine2:hover,
 .ten2:hover,
-.eleven2:hover {
+.eleven2:hover,
+.twelve2:hover {
     /* box-shadow: 0 0 42px #ffff00; */
     transform: scale(111%);
     opacity: 100%;
 }
+/* 
+/* special case */
+/* .twelve2:hover{ */
+    /* transform: scale(100%); */
+    /* opacity: 100%; */
+/* } */
 
 .expanding-container2 {
     display: flex;
@@ -22,6 +29,8 @@
 
 /* vs code */
 .one2 {
+    transform: scaleY(10%);
+    transform: scaleX(75%);
     opacity: 0.9;
     background: url(/src/images/tools/vscode.png);
 }
@@ -77,6 +86,14 @@
 .eleven2 {
     opacity: 0.9;
     background: url(/src/images/tools/js.png);
+
+}
+/* visual studio */
+.twelve2 {
+    transform: scaleY(100%);
+    transform: scaleX(75%);
+    opacity: 0.9;
+    background: url(/src/images/tools/visualStudioFlip.webp);
 
 }
 
