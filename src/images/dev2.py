@@ -1,6 +1,4 @@
 
 
 
-developer = {
-        "name": "Muzamal Sheikh",
-}
+developer = {"name": "Muzamal Sheikh"}
