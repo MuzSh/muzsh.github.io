@@ -1,11 +1,11 @@
 .column:hover,.card:hover{
   transform: scale(106%);
-  transition: all 1s ease-in-out;
+  transition: all .1s ease-in-out;
   font-variant: small-caps;
   /* font-weight: 700; */
   font-size: x-large;
-  font-style: normal;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style:italic;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   box-shadow: yellow;
   filter: invert(100%);
   /* filter: sepia(); */
@@ -48,23 +48,39 @@ body {
 }
 
 /* Style the counter cards */
-.card {
+.card{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   background-color: black;
   border-radius: 4.2ch;
-  font-family: 'Courier New', Courier, monospace;
-  /* background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fsitiobigdata.com%2F2019%2F06%2F09%2Fpython-configurar-entorno-machine-learning%2F&psig=AOvVaw1mE7_WIek0WCLYIKuBD91B&ust=1671334546998000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOCuwMTc__sCFQAAAAAdAAAAABAe); */
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* background: url(/src/images/code.jpeg); */
 }
 
-
-
+.btnProj{
+  color: white;
+  font-family: inherit;
+  font-display: normal;
+  background-color: darkgreen;
+  border-radius: 5ch;
+}
 #projects {
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style:normal;
-  font-style: italic;
+  /* font-style: italic; */
+  font-variant: small-caps;
+  padding-bottom: 10mm;
+}
+#miniProjects {
+  color: darkturquoise;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style:normal;
+  /* font-style: italic; */
   font-variant: small-caps;
   
+}
+.button-container {
+  display: center;
 }

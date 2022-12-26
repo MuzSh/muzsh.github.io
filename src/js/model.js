@@ -101,7 +101,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1));
 
 const clock = new THREE.Clock();
 
-const speed = [0.42,0.042, 0.0042]
+const speed = [0.42, 0.042, 0.0042]
 
 const tick = () => {
   const elapsedTime = clock.getElapsedTime();

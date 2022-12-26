@@ -6,10 +6,7 @@
 <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
 <!-- Three.js core -->
-<script
-        type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
-        ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <!-- " I'm not a robot verification "-->
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <html lang="en">
@@ -41,6 +38,7 @@
 
   <!-- import styles -->
   <link href="./src/css/cover.css" rel="stylesheet">
+  <link href="./src/css/smooth.css" rel="stylesheet">
   <link href="./src/css/model.css" rel="stylesheet">
   <link href="./src/css/video.css" rel="stylesheet">
   <link href="./src/css/navbar.css" rel="stylesheet">
@@ -61,46 +59,32 @@
 </div>
 
 <!-- navbar -->
+
 <body class="text-center">
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
       <div class="inner">
         <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link" href="https://1drv.ms/b/s!AqOeTY-UH34libVUw1_xWI8C6AwSfQ" target="_blank">Résumé</p>
-          <a class="nav-link " href="#skills">Skills </a>
-          <a class="nav-link " href="#technologies">Technologies </a>
-          <a class="nav-link " href="#projects">Projects </a>
-          <a class="nav-link " href="#contact">Contact</a>
+            <a class="nav-link " href="#skills">Skills </a>
+            <a class="nav-link " href="#technologies">Technologies </a>
+            <a class="nav-link " href="#projects">Projects </a>
+            <a class="nav-link " href="#contact">Contact</a>
         </nav>
       </div>
     </header>
-    
-    <!-- audio cuz why not --> 
+
+    <!-- audio cuz why not -->
     <p>
       <audio controls autoplay playsinline id="myaudio">
         <source src="./src/audio/Ochre - Anaphora.mp3" type="audio/mp3" autoplay>
       </audio>
     </p>
-<!-- 
-    <style>
-      .glow-image {
-        transition: box-shadow 0.5s;
-        border-radius: 10ch;
-      }
-    
-      .glow-image:hover {
-        box-shadow: 0 0 10px #ffff00;
-      }
-    </style>
-    
-    <img src="src/images/02.jpg" class="glow-image">
 
-     -->
-     
     <!-- the padded seperator -->
     <div class="divider1"></div>
     <!-- Time component  -->
-    <div class="time" id="root"></div>
+    <!-- <div class="time" id="root"></div> -->
 
     <!-- Load the React component. -->
     <script src="./src/js/time.js" defer type="text/babel"></script>
@@ -147,6 +131,7 @@
         });
       });
     </script>
+    <div class="time" id="root"></div>
 
     <!-- technologies -->
     <div class="expanding-container2" id="technologies">
@@ -174,34 +159,85 @@
         });
       });
     </script>
-  
+
     <div class="divid20"></div>
 
-    <section id = "projects">
+    <section id="projects">
       <h1>Projects</h1>
       <div class="row">
         <div class="column">
           <div class="card">
             <h3>Full Stack Mern Bank</h3>
             <p>Encompasses a full-fledged MERN stack exchange bank hosted on heroku server.</p>
+            <div class="button-container">
+              <a href="" target="_blank" class="btn btnProj">Demo 🔒</a>
+              <a href="" target="_blank" class="btn btnProj">Code 🔒</a>
+            </div>
           </div>
         </div>
         <div class="column">
           <div class="card">
             <h3>Machine Learning Data Analysis</h3>
             <p>Utilized machine learning models to train, test, and predict the outcome of breast cancer dataset.</p>
+            <div class="button-container">
+              <a href="" target="_blank" class="btn btnProj">Demo 🔒</a>
+              <a href="" target="_blank" class="btn btnProj">Code 🔒</a>
+            </div>
           </div>
         </div>
         <div class="column">
           <div class="card">
             <h3>This Github Portfolio</h3>
             <p>This website you are currently visiting, made using the mern stack.</p>
-            <p>(Work in progress)</p>
+            <div class="button-container">
+              <a href="" target="_blank" class="btn btnProj">Demo 🔗</a>
+              <a href="https://github.com/MuzSh/muzsh.github.io" target="_blank" class="btn btnProj">Code 🔗</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="miniProjects">
+      <h1>Mini Projects</h1>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h3>Pacman Factory</h3>
+            <p>
+              Simulation that animates movement using loops and screen edge detection.
+            </p>
+            <div class="button-container">
+              <a href="https://muzs.io/pacmanFactory/" target="_blank" class="btn btnProj">Demo 🔗</a>
+              <a href="https://github.com/MuzSh/pacmanFactory" target="_blank" class="btn btnProj">Code 🔗</a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <h3>Eye Movement</h3>
+            <p>
+              Eye illusion effect that track and follows mouse movement.
+            </p>
+            <div class="button-contiainer">
+              <a href="https://muzs.io/eyes/" target="_blank" class="btn btnProj">Demo 🔗</a>
+              <a href="https://github.com/MuzSh/eyes" target="_blank" class="btn btnProj">Code 🔗</a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <h3>Real Time Bus Tracker</h3>
+            <p>
+              Animates bus stops from MIT to Harvard with Mapbox.
+            </p>
+            <div class="button-contiainer">
+              <a href="https://muzs.io/bus-tracker/" target="_blank" class="btn btnProj">Demo 🔗</a>
+              <a href="https://github.com/MuzSh/bus-tracker" target="_blank" class="btn btnProj">Code 🔗</a>
+            </div>
+          </div>
+        </div>
+    </section>
     <div class="divid20"></div>
 
     <section id="contact" class="contactMe bg-dark">
@@ -215,8 +251,9 @@
             <p class="section-description mb-5">
               Let me know you stopped by...Or don't!
             </p>
-          </p>
-            <form method ="post" action="https://formsubmit.co/f5512786cc2dad3d99122e778895ca16" target='_blank' method="post" class="form">
+            </p>
+            <form method="post" action="https://formsubmit.co/f5512786cc2dad3d99122e778895ca16" target='_blank'
+              method="post" class="form">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Real Name:</label>
@@ -231,51 +268,55 @@
                 <label for="message">Message:</label>
                 <textarea class="form-control" id="message" name="message" rows="5"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="submit" class="btn btnProj">Send Message</button>
             </form>
           </div>
         </div>
       </div>
     </section>
-    
+
     <section id="connect">
       <div id="contact" class="contactMe bg-dark">
         <h1>
           Let's Connect!
         </h1>
         <a href="https://www.linkedin.com/in/muzamal-sheikh/" target="_blank">
-          <img class="socialHover" src="/src/images/social/linkedin.png" alt="Facebook Icon" height="50" width="50"/>
+          <img class="socialHover" src="/src/images/social/linkedin.png" alt="Facebook Icon" height="50" width="50" />
         </a>
-        
-        <a href="https://github.com/MuzSh/muzsh.github.io" target="_blank">
-          <img class="socialHover" src="/src/images/social/github.png" alt="Github Icon" height="50" width="50"/>
+
+        <a href="https://github.com/MuzSh/" target="_blank">
+          <img class="socialHover" src="/src/images/social/github.png" alt="Github Icon" height="50" width="50" />
         </a>
-        
+
         <a href="mailto:0muzsh1@gmail.com">
-          
-          <img class="socialHover" src="src/images/social/mail.png" alt="Mail icon" height="50" width="50" >
+
+          <img class="socialHover" src="src/images/social/mail.png" alt="Mail icon" height="50" width="50">
         </a>
-        
+
       </div>
     </section>
-    
+
     <footer class="mastfoot mt-auto">
       <div class="inner">
         <p>
           <strong>© </strong><b>Muzamal Sheikh</b>
           <em>
-          <script type="text/javascript">document.write( new Date().getFullYear() );</script>.
+            <script type="text/javascript">
+              document.write(new Date().getFullYear());
+            </script>.
           </em>
         </p>
       </div>
     </footer>
-    
-  </body>
-  <!-- loads model -->
-<body>
-    <canvas class="webgl"></canvas>
-    <script src="src/js/model.js"> </script>
-    <!-- load video change -->
-    <script src="src/js/vidChange.js"> </script>
+
 </body>
+<!-- loads model -->
+
+<body>
+  <canvas class="webgl"></canvas>
+  <script src="src/js/model.js"> </script>
+  <!-- load video change -->
+  <script src="src/js/vidChange.js"> </script>
+</body>
+
 </html>
