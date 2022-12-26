@@ -4,6 +4,11 @@
   /* left: -500; */
   z-index: -5;
   /* zoom: 100%; */
+  /* orphans: 99%; */
+  
+  max-width: 95%;
+  margin: 10px;
+
   -ms-zoom-animation: default;
   /* border-radius: 100ch; */
 }
