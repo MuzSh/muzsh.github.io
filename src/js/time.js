@@ -1,4 +1,4 @@
-function tick() {
+function timeTick() {
 <style>
 
 </style>
@@ -12,4 +12,4 @@ function tick() {
   ReactDOM.render(element, document.getElementById("root"));
 }
 
-setInterval(tick, 1000);
+setInterval(timeTick, 1000);

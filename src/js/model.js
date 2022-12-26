@@ -103,7 +103,7 @@ const clock = new THREE.Clock();
 
 const speed = [0.42, 0.042, 0.0042]
 
-const tick = () => {
+const modelTick = () => {
   const elapsedTime = clock.getElapsedTime();
   // console.log(vals)
   // Update objects
@@ -124,7 +124,7 @@ const tick = () => {
   renderer.render(scene, camera);
 
   // Call tick again on the next frame
-  window.requestAnimationFrame(tick);
+  window.requestAnimationFrame(modelTick);
 };
 
-tick();
+modelTick();
