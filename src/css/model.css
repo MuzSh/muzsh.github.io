@@ -1,6 +1,6 @@
 .webgl {
   position:absolute;
-  /* top: -200; */
+  bottom: -30;
   /* left: -500; */
   z-index: -5;
   /* zoom: 100%; */
