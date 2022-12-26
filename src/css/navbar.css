@@ -1,7 +1,7 @@
 .sticky {
     position: fixed;
-    width: 100%;
-    /* float: right; */
+    width: 97.5%;
+    float: right;
     z-index: 9;
     /* padding-top: 10px; */
     background-color: black;
@@ -64,7 +64,7 @@
 
     .nav-masthead {
         float: right;
-        padding-right: 45px;
+        padding-right: 90px;
     }
 }
 
