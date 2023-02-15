@@ -1,6 +1,7 @@
 .contactMe:hover{
     transform: scale(103%);
     filter: invert();
+    filter: saturate();
 }
 
 .contactMe {
