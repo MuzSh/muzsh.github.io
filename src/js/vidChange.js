@@ -40,7 +40,9 @@ function loadPage() {
       video.load()
       video.play();
     };
+    // load and last and pause
     function loadAfterTime(){
       var video = document.getElementById("bgvid");
       video.play();
+      video.stop();
     };
