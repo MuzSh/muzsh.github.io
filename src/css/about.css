@@ -1,0 +1,26 @@
+.aboutMe:hover{
+    transform: scale(101%);
+    /* filter: invert(); */
+    filter: grayscale();
+}
+
+.aboutMe {
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: fit-content;
+    cursor: pointer;
+    flex: 2;
+    margin: 20px;
+    position: relative;
+    transition: all .01s ease-out;
+    opacity: 90%;
+    font-family: monospace;
+}
+
+#about {
+    color: white;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: xx-large;
+}
