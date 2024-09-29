@@ -2,7 +2,7 @@
 const textureLoader = new THREE.TextureLoader();
 
 var materials = [
-  "src/images/iq3.jpg", //right
+  "src/images/iq-uni.jpg", //right
   "src/images/lbb.png", //left
   "src/images/02.jpg", //top
   "src/images/02.jpg", //bottom 
