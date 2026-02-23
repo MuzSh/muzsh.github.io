@@ -4,10 +4,10 @@ const textureLoader = new THREE.TextureLoader();
 var materials = [
   "src/images/iq-uni.jpg", //right
   "src/images/lbb.png", //left
-  "src/images/02.jpg", //top
-  "src/images/02.jpg", //bottom 
-  "src/images/02.jpg", //front
-  "src/images/02.jpg", //back
+  "src/images/03.png", //top
+  "src/images/03.png", //bottom 
+  "src/images/03.png", //front
+  "src/images/03.png", //back
 ].map(pic => {
 return new THREE.MeshLambertMaterial({map: textureLoader.load(pic)});
 });
