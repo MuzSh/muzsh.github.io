@@ -1,4 +1,4 @@
 
 
-dev = {"name": "Muz"}
+dev_name = {"name": "muz"} 
 
