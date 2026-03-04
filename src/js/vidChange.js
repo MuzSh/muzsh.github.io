@@ -12,7 +12,7 @@ function loadPage() {
     setTimeout(loadAfterTime5, 262000);
     setTimeout(loadAfterTime6, 270000);
     setTimeout(loadScreensaver,270420); // triggers screensaver
-  };
+};
 
 
 function loadAfterTime5() {
